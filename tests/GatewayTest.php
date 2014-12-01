@@ -36,7 +36,7 @@ class GatewayTest extends GatewayTestCase
         $this->assertFalse($response->isSuccessful());
         $this->assertTrue($response->isRedirect());
         $this->assertNotEmpty($response->getRedirectUrl());
-        $this->assertSame('https://github.com?username=Billy&password=really_secure&type=sale&total=10.00', $response->getRedirectUrl());
+        $this->assertSame('https://github.com?ssl_user_id=Billy&password=really_secure&type=sale&ssl_amount=10.00', $response->getRedirectUrl());
         $this->assertFalse($response->isTransparentRedirect());
     }
 
@@ -47,7 +47,7 @@ class GatewayTest extends GatewayTestCase
         $this->assertFalse($response->isSuccessful());
         $this->assertTrue($response->isRedirect());
         $this->assertNotEmpty($response->getRedirectUrl());
-        $this->assertSame('https://github.com?username=Billy&password=really_secure&type=Authorize&PBX_TOTAL=10.00', $response->getRedirectUrl());
+        $this->assertSame('https://github.com?ssl_user_id=Billy&password=really_secure&type=Authorize&ssl_amount=10.00', $response->getRedirectUrl());
         $this->assertFalse($response->isTransparentRedirect());
     }
 
@@ -58,7 +58,7 @@ class GatewayTest extends GatewayTestCase
         $this->assertFalse($response->isSuccessful());
         $this->assertTrue($response->isRedirect());
         $this->assertNotEmpty($response->getRedirectUrl());
-        $this->assertSame('https://github.com?username=Billy&password=really_secure&type=capture&PBX_TOTAL=10.00', $response->getRedirectUrl());
+        $this->assertSame('https://github.com?ssl_user_id=Billy&password=really_secure&type=capture&ssl_amount=10.00', $response->getRedirectUrl());
         $this->assertFalse($response->isTransparentRedirect());
     }
 

@@ -57,7 +57,7 @@ class AuthorizeRequest extends AbstractRequest
         return array
         (
             'site_ref' => $this->getTransactionId(),
-            'total' => $this->getAmount(),
+            'ssl_amount' => $this->getAmount(),
             'curr' => $this->getCurrencyNumeric(),
         );
     }
@@ -69,7 +69,7 @@ class AuthorizeRequest extends AbstractRequest
     public function getBaseData()
     {
         return array(
-            'username' => $this->getUsername(),
+            'ssl_user_id' => $this->getUsername(),
             'password' => $this->getPassword(),
             'type' => $this->getTransactionType(),
         );
