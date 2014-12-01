@@ -51,7 +51,6 @@ you can subscribe to.
 If you believe you have found a bug, please report it using the [GitHub issue tracker](https://github.com/thephpleague/omnipay-mollie/issues),
 or better yet, fork the library and submit a pull request.
 
-6. commit your extension to git & push to a repo on github (am working on the assumption of github)
 
 7. update the composer.json in your root (ie. the folder above vendor) - add the repository
 ```
