@@ -1,5 +1,5 @@
 <?php
-namespace Omnipay\Shell; //Make sure you update the namespace to reflect your plugin
+namespace Omnipay\Elavon; //Make sure you update the namespace to reflect your plugin
 
 use Omnipay\Common\AbstractGateway;
 
@@ -35,7 +35,7 @@ class Gateway extends AbstractGateway
     /**
      *
      * @param array $parameters
-     * @return \Omnipay\Shell\Message\AuthorizeRequest
+     * @return \Omnipay\Elavon\Message\AuthorizeRequest
      */
     public function authorize(array $parameters = array())
     {
@@ -45,7 +45,7 @@ class Gateway extends AbstractGateway
     /**
      *
      * @param array $parameters
-     * @return \Omnipay\Shell\Message\CaptureRequest
+     * @return \Omnipay\Elavon\Message\CaptureRequest
      */
     public function capture(array $parameters = array())
     {
@@ -55,7 +55,7 @@ class Gateway extends AbstractGateway
     /**
      *
      * @param array $parameters
-     * @return \Omnipay\Shell\Message\PurchaseRequest
+     * @return \Omnipay\Elavon\Message\PurchaseRequest
      */
     public function purchase(array $parameters = array())
     {
@@ -65,7 +65,7 @@ class Gateway extends AbstractGateway
     /**
      *
      * @param array $parameters
-     * @return \Omnipay\Shell\Message\CompletePurchaseRequest
+     * @return \Omnipay\Elavon\Message\CompletePurchaseRequest
      */
     public function completePurchase(array $parameters = array())
     {
@@ -74,7 +74,7 @@ class Gateway extends AbstractGateway
 
     /**
      * @param array $parameters
-     * @return \Omnipay\Shell\Message\CompleteAuthorizeRequest
+     * @return \Omnipay\Elavon\Message\CompleteAuthorizeRequest
      */
     public function completeAuthorize(array $parameters = array())
     {

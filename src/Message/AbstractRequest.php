@@ -18,7 +18,8 @@ abstract class AbstractRequest extends \Omnipay\Common\Message\AbstractRequest
         return $this->getBaseData() + $this->getTransactionData();
     }
 
-    public function validateCardFields () {
+    public function validateCardFields()
+    {
         $card = $this->getCard();
         foreach ($this->getRequiredCardFields() as $field) {
             $fn = 'get' . ucfirst($field);

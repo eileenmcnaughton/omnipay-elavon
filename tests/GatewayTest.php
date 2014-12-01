@@ -36,7 +36,7 @@ class GatewayTest extends GatewayTestCase
         $this->assertFalse($response->isSuccessful());
         $this->assertTrue($response->isRedirect());
         $this->assertNotEmpty($response->getRedirectUrl());
-        $this->assertSame('https://github.com?username=Billy&password=really_secure&type=sale&PBX_TOTAL=10.00', $response->getRedirectUrl());
+        $this->assertSame('https://github.com?username=Billy&password=really_secure&type=sale&total=10.00', $response->getRedirectUrl());
         $this->assertFalse($response->isTransparentRedirect());
     }
 
