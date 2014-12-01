@@ -11,12 +11,12 @@ use Omnipay\Common\Message\RedirectResponseInterface;
  */
 class Response extends AbstractResponse implements RedirectResponseInterface
 {
-  /**
-   * endpoint is the remote url - should be provided by the processor.
-   * we are using github as a filler
-   *
-   * @var string
-   */
+    /**
+     * endpoint is the remote url - should be provided by the processor.
+     * we are using github as a filler
+     *
+     * @var string
+     */
     public $endpoint = 'https://github.com';
 
 
@@ -60,7 +60,7 @@ class Response extends AbstractResponse implements RedirectResponseInterface
 
     public function getRedirectUrl()
     {
-        return $this->endpoint .'?' . http_build_query($this->data);
+        return $this->endpoint . '?' . http_build_query($this->data);
     }
 
     /**

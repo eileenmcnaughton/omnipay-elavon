@@ -9,9 +9,9 @@ use Omnipay\Common\CreditCard;
 
 class GatewayTest extends GatewayTestCase
 {
-  /**
-   * @var Omnipay/Elavon/SystemGateway
-   */
+    /**
+     * @var Omnipay/Elavon/SystemGateway
+     */
     public $gateway;
 
     /**

@@ -77,8 +77,8 @@ class AuthorizeRequest extends AbstractRequest
 
     /**
      * this is the url provided by your payment processor. Github is standing in for the real url here
-    * @return string
-    */
+     * @return string
+     */
     public function getEndpoint()
     {
         return 'https://github.com';

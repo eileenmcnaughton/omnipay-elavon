@@ -38,6 +38,7 @@ abstract class AbstractRequest extends \Omnipay\Common\Message\AbstractRequest
     {
         return $this->setParameter('username', $value);
     }
+
     public function getPassword()
     {
         return $this->getParameter('password');

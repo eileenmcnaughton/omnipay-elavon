@@ -9,20 +9,20 @@ use Omnipay\Common\AbstractGateway;
 class Gateway extends AbstractGateway
 {
 
-  /**
-   * get the name of your processor. This will be the name used w
-   * @return string
-   */
+    /**
+     * get the name of your processor. This will be the name used w
+     * @return string
+     */
     public function getName()
     {
         return 'Elavon';
     }
 
-  /**
-   * declare the parameters that will be used to authenticate with the site
-   * You will need to create a function for each of these. e.g getUsername for username
-   * @return array
-   */
+    /**
+     * declare the parameters that will be used to authenticate with the site
+     * You will need to create a function for each of these. e.g getUsername for username
+     * @return array
+     */
     public function getDefaultParameters()
     {
         return array(
@@ -90,6 +90,7 @@ class Gateway extends AbstractGateway
     {
         return $this->setParameter('username', $value);
     }
+
     public function getPassword()
     {
         return $this->getParameter('password');
